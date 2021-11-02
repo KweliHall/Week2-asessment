@@ -30,11 +30,11 @@
 */
 
 //CODE HERE
-class ticket {
+class Ticket {
     constructor(items, orderTime, customerId) {
         this.items = items;
         this.orderTimes = orderTime;
-        this.customerId
+        this.customerId = customerId
     }
     
     updatedStatus(newStatus) {

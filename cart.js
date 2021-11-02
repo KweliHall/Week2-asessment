@@ -58,7 +58,9 @@ const summedPrice = cart.reduce((acc, curr) => {
 */
 
 //CODE HERE
-
+function calcFinalPrice (cartTotal, couponValue, tax) {
+    const sumsum = cartTotal.reduce
+}
 
 
 //////////////////PROBLEM 3////////////////////

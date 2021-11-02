@@ -123,9 +123,11 @@ const foodArr = {
 
 //CODE HERE
 
- const filteredFood = foodArr.filter(function(element){
-    return element
- }
+ const filteredFood = foodArr.filter((element) =>{
+    if(element.tags.includes("delicous")) {
+        return element;
+    })
+ };
 
 
 
@@ -169,6 +171,34 @@ const foodArr = {
 */
 
 //CODE HERE
+// const filterByProperty = (property, number, type) => {
+//     let filteredArr = [];
+//     if(type === "Above") {
+//         foodArr.filter((element) => {
+//           if(element[property] > number) {
+//             filteredArr.push(element);
+//           }  
+//         })
+//     }else if (type === "below") {
+        // foodArr.filter((element)) => {
+//         if(element[property] < number) {
+//             filteredArr.push(element);
+//         }
+//         }
+//     }
+// }
+
+const filterByProperty = (property, number, type) => {
+    const filteredFood = foodArr.filter((element) => {
+        if(type === "above") {
+            return element[property] >= number;
+        }else if(type === "below") {
+            return element[property] <= number;
+        }
+    })
+    return filteredFood;
+}
+
 
 
 /*
