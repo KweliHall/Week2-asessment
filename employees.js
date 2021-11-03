@@ -20,20 +20,17 @@
 */
 
 //CODE HERE
-class employee {
+class Employee {
     constructor(name, shift) {
-    this.name = name
-    this.shift = shift;
-    }
-    getName() {
-        return this.name, this.shift;
+        this.name = name,
+        this.shift = shift
     } 
     getScheduel() {
         console.log(`${this.name}, "works on", ${this.shift}`);
     }
 }
 
-console.log(getName)
+
 
 
 /*
@@ -47,14 +44,14 @@ console.log(getName)
 */
 
 //CODE HERE
-let empOne = new Emp("Kweli", )
+let empOne = new Employee("Kweli", "weekday afternoons");
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
 
 //CODE HERE
-
+empOne.getScheduel();
 
 /*
     Make a copy of the empOne object
@@ -70,7 +67,7 @@ let empOne = new Emp("Kweli", )
 
 //CODE HERE
 
-const empTwo = {...empOne, name, "nick"};
+// const empTwo = {...empOne, name, "nick"};
  
 
 //////////////////PROBLEM 2////////////////////

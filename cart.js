@@ -36,10 +36,11 @@ const cart = [
 //CODE HERE
 
 const summedPrice = cart.reduce((acc, curr) => {
-    return acc + curr;
+    // console.log(curr.price)
+    return acc + curr.price;
 }, 0)
 
- console.log(cart.reduce(summedPrice))
+ console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -59,9 +60,10 @@ const summedPrice = cart.reduce((acc, curr) => {
 
 //CODE HERE
 function calcFinalPrice (cartTotal, couponValue, tax) {
-    const sumsum = cartTotal.reduce
+    let finalPrice = (cartTotal * tax / 100) + cartTotal - couponValue;
+    return finalPrice 
 }
-
+console.log(calcFinalPrice(10, 7, 5))
 
 //////////////////PROBLEM 3////////////////////
 /*  
