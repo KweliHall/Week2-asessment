@@ -99,14 +99,50 @@
 */
 
 //CODE HERE
-const foodArr = {
-    name: "Kwelis Food",
-    price: 20.99,
-    catagory: "Super Market food",
-    popularity: 1000,
-    rating: 100,
-    tags: ["Fruit", "vegstables", "snacks", "Dinners"]
-}
+const foodArr = [
+    {
+    name: "Margherita"
+    price: 8.25,
+    catagory: "pizza",
+    popularity: 10,
+    rating: 8,
+    tags: ["Crushed Tomato", "Mozzarella", "Basil"]
+    },
+    {
+    name: "Margherita Extra",
+    price: 13.25,
+    catagory: "pizza",
+    popularity: 8,
+    rating: 8.5,
+    tags: ["Mozzarella Di Bufala", "Mr. Vesuvio", "Tomato", "Basil"]
+    },
+    {
+    name: "Toto",
+    price: 14.00,
+    catagory: "pizza",
+    popularity: 6,
+    rating: 6,
+    tags: ["Porssciutto,", "Arugula", "Goat Cheese", "Cracked Red Pepper", "Garlic"]
+    },
+    {
+    name: "Rugula",
+    price: 13.75,
+    catagory: "pizza",
+    popularity: 7,
+    rating: 8,
+    tags: ["Prosciutto", "Arugula"]
+    },
+    {
+    name: "Siciliana",
+    price: 13.00,
+    catagory: "pizza",
+    popularity: 8,
+    rating: 10,
+    tags: ["Prosciutto", "Artichoke", "Ascolane Olive", "Basil"]
+    }
+]
+
+
 
 
 //////////////////PROBLEM 4////////////////////
@@ -126,8 +162,8 @@ const foodArr = {
  const filteredFood = foodArr.filter((element) =>{
     if(element.tags.includes("delicous")) {
         return element;
-    })
- };
+    }
+ })
 
 
 
@@ -195,8 +231,8 @@ const filterByProperty = (property, number, type) => {
         }else if(type === "below") {
             return element[property] <= number;
         }
+        return filteredFood;
     })
-    return filteredFood;
 }
 
 
@@ -209,3 +245,5 @@ const filterByProperty = (property, number, type) => {
 */
 
 // CODE HERE
+filterByProperty("rattings", 5, "above")
+ 

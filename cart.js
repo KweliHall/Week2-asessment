@@ -87,6 +87,7 @@ console.log(calcFinalPrice(10, 7, 5))
 
 /*
     TEXT ANSWER HERE
+    in my object im going to ask my customer what topping, sauce, and where they want to sit. just usefull information to have on the website. datatype: strings and numbers
 
 */
 
@@ -96,3 +97,8 @@ console.log(calcFinalPrice(10, 7, 5))
 */
 
 //CODE HERE
+const customer = {
+    toppings: "toppings",
+    sauce: "sauce",
+    table: 5,
+}

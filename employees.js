@@ -66,7 +66,7 @@ empOne.getScheduel();
 */
 
 //CODE HERE
-
+let empTwo = {...empOne, name: "nick"}
 // const empTwo = {...empOne, name, "nick"};
  
 
@@ -94,7 +94,19 @@ empOne.getScheduel();
 */
 
 //CODE HERE
+class Manager extends Employee {
+    constructor(name, shift, employees) {
+        super(name, shift)
+        this.employees = [employees]
+    }
+    getEmployee() {
+        console.log(`${this.name} manages ${Employee}`)
+    }
 
+    addEmployee(emp) {
+        employees.push(push)
+    }
+}
 
 
 /*
@@ -109,14 +121,14 @@ empOne.getScheduel();
 */
 
 //CODE HERE
-
+let manager = new Manager("kweli", "weekday afternoon", "jaylen and mahad")
 
 /*
     Call the `getEmployees` method on the
     `manager` object.  
 */
-
 //CODE HERE
+manager.getEmployee()
 
 /*
     Call the `addEmployee` method on the 
@@ -125,7 +137,7 @@ empOne.getScheduel();
 */
 
 //CODE HERE 
-
+manager.addEmployee("Coach")
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 
@@ -133,3 +145,4 @@ empOne.getScheduel();
 */
 
 //CODE HERE
+manager.getEmployee()
